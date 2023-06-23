@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contacto - Club Nocturno</title>
+  <style>
+    /* Estilos CSS */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    form textarea {
+      resize: vertical;
+      height: 100px;
+    }
+
+    form input[type="submit"] {
+      background-color: #000;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    form input[type="submit"]:hover {
+      background-color: #333;
+    }
+
+    footer {
+      background-color: #000;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Club Nocturno</h1>
+  </header>
+
+  <nav>
+    <a href="boceto de inicio.html">Inicio</a>
+    <a href="boceto de eventos.html">Eventos</a>
+    <a href="boceto de menu.html">Menu</a>
+    <a href="boceto de contacto.html">Contacto</a>
+  </nav>
+
+  <section>
+    <h2>Contacto</h2>
+
+    <form action="contacto.php" method="post">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" required></textarea>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Club Nocturno. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
